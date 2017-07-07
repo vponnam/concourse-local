@@ -12,7 +12,7 @@ Make sure it's installed properly by typing `docker-compose -v`
 		git clone https://github.com/vponnam/concourse-local.git
 		cd concourse-local/install/docker/
 		
-###### Note: Please make sure that you've changed the default creds specifed in **docker-compose.yml**
+###### Note: Please make sure to change the default creds that were specifed in **docker-compose.yml**
 
 **Step 3** Generate the reuired keys as below for TLS
 
@@ -39,7 +39,7 @@ Make sure it's installed properly by typing `docker-compose -v`
 **Step 6** Verify that you can access web_api through localhost:8080 from your browser
 
 Login page should appear like below: 
-![Login Page](https://github.com/vponnam/concourse-local/install/images/UI_ScreenShot.png "Logo Title Text 1")
+![Login Page](https://github.com/vponnam/raw/master/concourse-local/install/images/UI_ScreenShot.png "Logo Title Text 1")
 
 Make sure that you can login to web using the creds specified in docker-compose.yml
 
@@ -82,5 +82,4 @@ Alright! we're all set, just choose the required worker and then fly!!
 			docker stop f6292424ae27 18314c3b1d85  8a914a1c084b
 			 
 *When not in use, docker deamon can be stopped by clicking on `Quit Docker`*
-
-![Stop Docker](https://github.com/vponnam/concourse-local/install/images/Docker_ScreenShot.png "Logo Title Text 1")
+![Stop Docker](https://github.com/vponnam/raw/master/concourse-local/install/images/Docker_ScreenShot.png "Logo Title Text 1")
