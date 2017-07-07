@@ -39,7 +39,7 @@ Make sure it's installed properly by typing `docker-compose -v`
 **Step 6** Verify that you can access web_api through localhost:8080 from your browser
 
 Login page should appear like below: 
-![Login Page](/concourse-local/install/images/UI_ScreenShot.png "Logo Title Text 1")
+![Login Page](https://raw.github.com/vponnam/master/concourse-local/install/images/UI_ScreenShot.png "Logo Title Text 1")
 
 Make sure that you can login to web using the creds specified in docker-compose.yml
 
@@ -82,4 +82,4 @@ Alright! we're all set, just choose the required worker and then fly!!
 			docker stop f6292424ae27 18314c3b1d85  8a914a1c084b
 			 
 *When not in use, docker deamon can be stopped by clicking on `Quit Docker`*
-![Stop Docker](/concourse-local/install/images/Docker_ScreenShot.png "Logo Title Text 1")
+![Stop Docker](https://raw.github.com/vponnam/master/concourse-local/install/images/Docker_ScreenShot.png "Logo Title Text 1")
