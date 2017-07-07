@@ -45,18 +45,22 @@ Make sure that you can login to web using the creds specified in docker-compose.
 
 **Adding Darwin worker**
 		
-**Step 7** Start the worker using below command
+**Step 7** From a different terminal session start the worker using below command
+		
+		cd concourse-local/install/docker/keys/worker
 		
 		sudo concourse worker \
 		--work-dir /opt/concourse/worker \
 		--tsa-host 127.0.0.1 \
 		--tsa-port 8222 \
-		--tsa-public-key tsa_host_key.pub \
-		--tsa-worker-private-key drw_worker_key
+		--tsa-public-key ./keys/worker/tsa_host_key.pub \
+		--tsa-worker-private-key ./keys/worker/drw_worker_key
 
-**Testing** Test the setup
+**Testing** Test the setup. From a different terminal session run the below commands
 
-		fly -target my-local login -c localhost:8080
+		fly -t my-local login -c http://localhost:8080
+		Use the creds from docker-compose.yml
+		
 		fly sp -t my-local -p test-pipeline -c test.yml
 
 **Verifying the workers** `fly -t my-local workers` command should result the below 2 workes
