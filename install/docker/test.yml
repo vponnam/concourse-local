@@ -1,0 +1,9 @@
+jobs:
+- name: hello-darwin
+  plan:
+  - task: task-1
+    config:
+      platform: darwin
+      run:
+        path: echo
+        args: ["Successfully executed task in darwin worker"]
