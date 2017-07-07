@@ -1,10 +1,10 @@
 #### Instructions to add a darwin worker to tsa running inside docker container.
 
-**Step 1.** Install the stable from docker compose [here](https://docs.docker.com/docker-for-mac/install/#what-to-know-before-you-install)
+**Step 1.** Install the stable release of docker compose from [here](https://docs.docker.com/docker-for-mac/install/#what-to-know-before-you-install)
 
 Make sure it's installed properly by typing `docker-compose -v`
 
-		Venkatas-MacBook-Pro:docker ponnam$ docker-compose -v
+		docker-compose -v
 		docker-compose version 1.14.0, build c7bdf9e
 		
 **Step 2** Get the docker-compose manifest file
